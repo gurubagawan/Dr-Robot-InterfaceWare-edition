@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .05em; /* Adjust as needed */
+  animation: 
+    typing 0.75s steps(75, end),
+    blink-caret .75s step-end infinite;
+}
+
+.test {
+  display: inline-block; 
+}
+.robot {
+  max-height: 300px
+}
+.h1 {
+  font-size: 48px; 
+}
+
+.h2{
+  display: inline-block;
+}
+
+.bubble {
+  /* background-image: url('./chatbot.svg');  */
+  /* background-size: 100% 100%;  */
+  border: 5px solid black;
+  border-radius: 20px; 
+  width: auto; 
+  display: inline-block; 
+  padding: 5px 
+}
+.red {
+  background-color: red; 
+  display: flex; 
+  align-items: center; 
+}
+.image{
+  height: 75px; 
+  width: 75px; 
+  vertical-align: middle; 
+  display: inline-block; 
+  margin-bottom: 5px; 
+  align-self: center; 
+  border-radius: 10px; 
+}
+.robot{
+      display: block;
+    margin-left: auto;
+    margin-top: 5px;
+    margin-right: auto;
+}
+
+.btn{
+  display: inline-block;
+  height: 185px;
+  width: 185px;
+  border-radius: 50%;
+  padding: 0px; 
+  margin: 10px; 
+}
+.btn :focus {
+  outline: 200px; 
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
